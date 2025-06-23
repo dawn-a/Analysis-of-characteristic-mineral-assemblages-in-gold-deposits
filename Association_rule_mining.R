@@ -23,7 +23,7 @@ associated.mins <- strsplit(as.character(Type_min_merge),',')
 # frequency = data.frame(freq=itemFreq_sort)
 # summary(itemFreq)
 # class(itemFreq)
-# itemFrequencyPlot(z,top = 20,col = "lightblue",xlab = "矿物",ylab = "频率",main = "频率top10的矿物",cex.names=1)
+# itemFrequencyPlot(z,top = 20,col = "lightblue",xlab = "",ylab = "",main = "",cex.names=1)
 
 # Generate mineral association rules
 type=c("IOCG","Porphyry","Epithermal","Orogenic","Carlin","VMS")
@@ -145,7 +145,7 @@ count.Carlin=count(items.Carlin,mineral)
 count.Epithermal=count(items.Epithermal,mineral)
 
 
-# Obtain feature mineral visualization network graph edge data
+# Obtain characteristic mineral visualization network graph edge data
 mineral_links_VMS=data.frame(matrix(ncol = 2, nrow = 0))
 colnames(mineral_links_VMS) <- c('source','target')
 y=0
@@ -209,7 +209,7 @@ for (i in 1:173017) {
 mineral_links_orogeny=data.frame(matrix(ncol = 2, nrow = 0))
 colnames(mineral_links_orogeny) <- c('source','target')
 y=0
-for (i in 2:155172) {
+for (i in 2:154964) {
   y=y+1
   if(y%%10000==0){
     print(y)
@@ -224,7 +224,7 @@ for (i in 2:155172) {
 mineral_links_porphyry=data.frame(matrix(ncol = 2, nrow = 0))
 colnames(mineral_links_porphyry) <- c('source','target')
 y=0
-for (i in 336058:372336) {
+for (i in 1:361317) {
   y=y+1
   if(y%%10000==0){
     print(y)
