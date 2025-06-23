@@ -179,7 +179,7 @@ for (i in 1:268) {
 mineral_links_Epithermal=data.frame(matrix(ncol = 2, nrow = 0))
 colnames(mineral_links_Epithermal) <- c('source','target')
 y=0
-for (i in 1:17223) {
+for (i in 1:17211) {
   y=y+1
   if(y%%5000==0){
     print(y)
@@ -194,7 +194,7 @@ for (i in 1:17223) {
 mineral_links_Carlin=data.frame(matrix(ncol = 2, nrow = 0))
 colnames(mineral_links_Carlin) <- c('source','target')
 y=0
-for (i in 1:173017) {
+for (i in 1:172813) {
   y=y+1
   if(y%%10000==0){
     print(y)
